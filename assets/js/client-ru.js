@@ -18388,28 +18388,45 @@
         key: "render",
         value: function() {
           var e = this.context.store,
-            t = this.props.children;
-          return d.default.createElement("div", null, d.default.createElement(x.default, null, d.default.createElement(y.default, b.default), d.default.createElement(E.Menu, null, d.default.createElement(O.default, null, d.default.createElement(p.IndexLink, {
-            to: "/"
-          }, "Home"), d.default.createElement(p.Link, {
-            to: "/about"
-          }, "About"), d.default.createElement("a", {
-            href: "https://angel.co/zero-8",
-            target: "__blank"
-          }, "Careers"), d.default.createElement("a", {
-            href: "https://blog.zerofinancial.com",
-            target: "__blank"
-          }, "Blog"), d.default.createElement(p.Link, {
+          t = this.props.children;
+          return d.default.createElement(
+            "div",
+            null,
+            d.default.createElement(
+              x.default, null,
+              d.default.createElement(
+                y.default,
+                b.default
+              ),
+              d.default.createElement(E.Menu, null, d.default.createElement(O.default, null,
+
+            d.default.createElement(p.IndexLink, {to: "index.html"}, "EN"),
+            d.default.createElement(p.IndexLink, {to: "/"}, "Home"),
+            d.default.createElement(p.Link, {to: "/about"}, "About"),
+
+          // d.default.createElement("a", {
+          //   href: "https://angel.co/zero-8",
+          //   target: "__blank"
+          // }, "Careers"),
+          // d.default.createElement("a", {
+          //   href: "https://blog.zerofinancial.com",
+          //   target: "__blank"
+          // }, "Blog"),
+          d.default.createElement(p.Link, {
             to: "/faq"
-          }, "FAQ"), d.default.createElement("a", {
+          }, "FAQ"),
+          d.default.createElement("a", {
             onClick: this.onCheckStatusClick
-          }, "Check Status"))), d.default.createElement(E.Content, null, t, d.default.createElement(T.default, null, d.default.createElement("a", {
-            href: "/tou"
-          }, "Terms of Use"), d.default.createElement("a", {
-            href: "/privacy"
-          }, "Privacy Policy")))), d.default.createElement(m.default, null, e.isSignupFormOpen ? d.default.createElement(C.default, {
+          }, "Check Status"))),
+          d.default.createElement(
+            E.Content, null, t,
+              d.default.createElement(T.default, null, d.default.createElement("a", {href: "/tou"}, "Terms of Use"),
+              d.default.createElement("a", {href: "/privacy"}, "Privacy Policy")))
+          ),
+          d.default.createElement(m.default, null, e.isSignupFormOpen ? d.default.createElement(C.default, {
             checkStatusMode: e.inCheckStatusMode
-          }) : null))
+          }) : null)
+          )
         }
       }]), t
     }(f.Component), u.propTypes = {
@@ -18484,21 +18501,31 @@
             ref: function(t) {
               e.navigation = t
             }
-          }, c.default.createElement(f.IndexLink, {
+          },
+          c.default.createElement(f.IndexLink, {
+            to: "index.html"
+          }, "EN"),
+          c.default.createElement(f.IndexLink, {
             to: "/"
-          }, "Home"), c.default.createElement(f.Link, {
+          }, "Home"),
+          c.default.createElement(f.Link, {
             to: "/about"
-          }, "About"), c.default.createElement(f.Link, {
+          }, "About"),
+          c.default.createElement(f.Link, {
             to: "/faq"
-          }, "FAQ"), c.default.createElement("a", {
-            href: "https://angel.co/zero-8/jobs",
-            target: "__blank"
-          }, "Careers"), c.default.createElement("a", {
-            href: "https://blog.zerofinancial.com",
-            target: "__blank"
-          }, "Blog"), c.default.createElement("a", {
+          }, "FAQ"),
+          // c.default.createElement("a", {
+          //   href: "https://angel.co/zero-8/jobs",
+          //   target: "__blank"
+          // }, "Careers"),
+          // c.default.createElement("a", {
+          //   href: "https://blog.zerofinancial.com",
+          //   target: "__blank"
+          // }, "Blog"),
+           c.default.createElement("a", {
             onClick: this.onCheckStatusClick
-          }, "Check Status"))
+          }, "Check Status")
+        )
         }
       }, {
         key: "showTimeline",
